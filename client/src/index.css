@@ -1,177 +1,71 @@
+/* Quiet Luxury Studio: warm ivory, deep plum, copper-rose accents, editorial serif + sans. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-:root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
-}
-
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
-}
+:root { --ivory:#f7f2eb; --paper:#fffdf9; --plum:#31232b; --plum-soft:#5f4651; --copper:#b86b5b; --copper-light:#dca18d; --line:#e5d9cf; --muted:#8d7e78; --radius:0.25rem; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--ivory); color:var(--plum); font-family:'DM Sans',sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+button, a { -webkit-tap-highlight-color:transparent; }
+button { font:inherit; }
+.site-shell { overflow:hidden; }
+.topline { height:34px; display:flex; align-items:center; justify-content:space-between; padding:0 5vw; background:var(--plum); color:#f6ebe4; font-size:10px; letter-spacing:.09em; text-transform:uppercase; }
+.topline a { color:var(--copper-light); font-weight:600; }
+.status-dot { display:inline-block; width:6px; height:6px; margin-right:7px; background:#9fc49b; border-radius:50%; }
+.nav-wrap { height:88px; display:flex; align-items:center; justify-content:space-between; padding:0 5vw; background:var(--ivory); border-bottom:1px solid var(--line); position:relative; z-index:5; }
+.brand,.footer-brand { display:flex; align-items:center; gap:12px; }
+.brand img,.footer-brand img { width:38px; height:38px; object-fit:contain; }
+.brand b,.footer-brand b { display:block; font:600 25px/22px 'Cormorant Garamond',serif; letter-spacing:-.02em; }
+.brand small,.footer-brand small { display:block; margin-top:4px; font-size:8px; letter-spacing:.17em; color:var(--copper); font-weight:700; }
+.nav-links { display:flex; align-items:center; gap:30px; font-size:12px; font-weight:600; color:var(--plum-soft); }
+.nav-links a:not(.nav-book) { transition:color .2s ease; }
+.nav-links a:not(.nav-book):hover { color:var(--copper); }
+.nav-book { display:flex; align-items:center; gap:8px; padding:12px 16px; background:var(--copper); color:white; transition:transform .18s ease,background .18s ease; }
+.nav-book:hover,.button-primary:hover { background:#9f594c; transform:translateY(-2px); }
+.menu-toggle { display:none; background:none; border:0; color:var(--plum); }
+.hero { display:grid; grid-template-columns:47% 53%; min-height:650px; padding:62px 5vw 76px; gap:4vw; align-items:center; }
+.hero-copy { padding-left:4vw; padding-bottom:24px; }
+.eyebrow,.section-label { color:var(--copper); font-size:10px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; }
+.eyebrow { margin:0 0 26px; }
+h1,h2,h3,p { margin-top:0; }
+h1,h2 { font-family:'Cormorant Garamond',serif; font-weight:500; letter-spacing:-.045em; }
+h1 { font-size:clamp(56px,6.2vw,91px); line-height:.83; margin-bottom:31px; }
+h1 em,h2 em { color:var(--copper); font-weight:500; }
+.hero-description { max-width:390px; color:var(--plum-soft); font-size:15px; line-height:1.65; }
+.hero-actions,.visit-actions { display:flex; align-items:center; gap:23px; margin:33px 0 40px; }
+.button { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:15px 19px; font-size:11px; font-weight:700; letter-spacing:.04em; transition:transform .18s ease,background .18s ease,border-color .18s ease; }
+.button:active,.nav-book:active { transform:scale(.97); }
+.button-primary { background:var(--copper); color:white; }
+.button-outline { border:1px solid var(--copper); color:var(--copper); }
+.button-outline:hover { background:var(--copper); color:#fff; }
+.button-ghost { border:1px solid rgba(255,255,255,.28); color:#fff; }
+.button-ghost:hover { border-color:#fff; }
+.text-link { display:inline-flex; gap:10px; align-items:center; color:var(--plum); font-size:11px; font-weight:700; border-bottom:1px solid var(--copper); padding-bottom:5px; }
+.text-link span { color:var(--copper); font-size:16px; }
+.hero-note { display:flex; align-items:center; gap:10px; color:var(--muted); font-size:10px; }
+.rating { display:inline-flex; align-items:center; gap:4px; color:var(--copper); font-weight:700; }
+.rule { width:25px; height:1px; background:var(--line); }
+.hero-visual { position:relative; height:590px; }
+.hero-visual:before { content:""; position:absolute; right:-4vw; top:-35px; width:73%; height:115%; background:#eadcd2; z-index:-1; }
+.hero-visual img { width:84%; height:100%; object-fit:cover; object-position:center; display:block; }
+.hero-stamp { position:absolute; right:3%; top:17%; display:flex; flex-direction:column; align-items:center; justify-content:center; width:111px; height:111px; background:var(--plum); color:var(--copper-light); border-radius:50%; transform:rotate(9deg); }
+.hero-stamp span { font-size:7px; letter-spacing:.16em; }.hero-stamp b { font:600 43px/35px 'Cormorant Garamond',serif; }
+.hero-caption { position:absolute; right:0; bottom:18px; writing-mode:vertical-rl; text-transform:uppercase; letter-spacing:.22em; font-size:9px; color:var(--plum-soft); }
+.intro-band { display:grid; grid-template-columns:90px 1.1fr 1fr; gap:5vw; align-items:start; padding:98px 12vw 105px; background:var(--paper); border-top:1px solid var(--line); }
+.intro-mark { font-size:39px; color:var(--copper); text-align:center; }
+.section-label { display:flex; align-items:center; gap:12px; margin-bottom:25px; }.section-label span:first-child { color:var(--muted); }.section-label span:last-child { color:var(--copper); }
+h2 { font-size:clamp(49px,5.4vw,75px); line-height:.86; margin-bottom:0; }
+.intro-text { padding-top:55px; max-width:370px; color:var(--plum-soft); font-size:14px; line-height:1.75; }.intro-text .text-link { margin-top:24px; }
+.services-section { padding:115px 10vw 130px; background:var(--ivory); }.section-heading { display:flex; justify-content:space-between; align-items:end; gap:50px; max-width:1100px; margin:0 auto 55px; }.section-heading p { max-width:360px; margin-bottom:5px; color:var(--plum-soft); font-size:13px; line-height:1.75; }
+.service-tabs { display:flex; max-width:1100px; margin:0 auto; border-bottom:1px solid var(--line); }.service-tabs button { display:flex; align-items:center; gap:19px; padding:17px 23px 16px 0; margin-right:37px; border:0; background:transparent; color:var(--muted); font-size:12px; font-weight:700; }.service-tabs button svg { opacity:0; transform:translate(-5px,5px); transition:all .2s ease; }.service-tabs button.active { color:var(--plum); border-bottom:2px solid var(--copper); }.service-tabs button.active svg { opacity:1; transform:none; color:var(--copper); }
+.service-feature { display:grid; grid-template-columns:38% 62%; max-width:1100px; margin:48px auto 0; background:var(--paper); }.service-image { min-height:550px; }.service-image img { width:100%; height:100%; min-height:550px; object-fit:cover; }.service-prices { padding:52px 8%; }.price-heading span { color:var(--copper); font-size:9px; letter-spacing:.16em; font-weight:700; }.price-heading h3 { font:500 42px/1 'Cormorant Garamond',serif; margin:13px 0 10px; }.price-heading p { margin-bottom:27px; color:var(--muted); font-size:12px; }.price-list { width:100%; }.price-row { display:flex; align-items:baseline; justify-content:space-between; gap:18px; padding:11px 0; border-bottom:1px solid var(--line); color:var(--plum-soft); font-size:12px; }.price-row strong { flex-shrink:0; color:var(--copper); font-size:11px; font-weight:700; }
+.rituals-section { display:grid; grid-template-columns:44% 56%; background:var(--plum); color:#f9f1e9; }.rituals-image { position:relative; min-height:790px; }.rituals-image img { width:100%; height:100%; object-fit:cover; opacity:.8; }.vertical-note { position:absolute; left:26px; bottom:28px; writing-mode:vertical-rl; transform:rotate(180deg); color:#f5dfd4; font-size:9px; letter-spacing:.18em; }.rituals-content { padding:120px 11vw 100px 10vw; }.rituals-content .section-label span:first-child { color:#aa9298; }.rituals-content .section-label span:last-child { color:var(--copper-light); }.rituals-content h2 { color:#fff8f0; margin-bottom:55px; }.ritual-block { max-width:500px; margin-top:41px; }.ritual-block h3 { display:flex; justify-content:space-between; color:#fff8f0; font:500 27px/1 'Cormorant Garamond',serif; margin-bottom:17px; }.ritual-block h3 span { color:var(--copper-light); font:700 10px 'DM Sans',sans-serif; letter-spacing:.14em; }.ritual-block .price-row { border-color:#564149; color:#d8c6c2; }.ritual-block .price-row strong { color:var(--copper-light); }
+.nails-section { display:grid; grid-template-columns:39% 61%; padding:130px 9vw 140px; background:var(--paper); gap:7vw; }.nails-copy { padding:50px 0 0 3vw; }.nails-copy p { max-width:300px; margin:28px 0 32px; color:var(--plum-soft); font-size:14px; line-height:1.7; }.nails-cards { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start; }.nail-card { background:var(--ivory); padding-bottom:29px; }.nail-card img { width:100%; aspect-ratio:1/1.08; object-fit:cover; }.nail-card h3 { padding:0 25px; margin:22px 0 15px; font:500 31px/1 'Cormorant Garamond',serif; }.nail-card .price-list { padding:0 25px; }.nail-card-offset { margin-top:62px; padding:34px 25px 29px; }.nail-number { color:var(--copper); font-size:10px; letter-spacing:.16em; font-weight:700; margin-bottom:76px; }.nail-card-offset h3 { padding:0; }.nail-card-offset .price-list { padding:0; }
+.visit-section { display:grid; grid-template-columns:1fr 1fr; background:var(--copper); color:#fff7f0; padding:112px 13vw 120px; gap:10vw; }.visit-section .section-label span { color:#f7d9cc; }.visit-section h2 { color:#fffaf4; }.visit-copy > p { max-width:330px; margin:30px 0 0; color:#f9dfd5; font-size:14px; line-height:1.7; }.visit-actions { margin-bottom:0; }.visit-section .button-primary { background:var(--plum); }.visit-section .button-primary:hover { background:#21161b; }.visit-card { align-self:center; background:var(--paper); color:var(--plum); padding:38px 40px 33px; box-shadow:13px 13px 0 rgba(49,35,43,.15); }.visit-card-top { display:flex; align-items:center; gap:10px; color:var(--copper); font-size:10px; text-transform:uppercase; letter-spacing:.14em; font-weight:700; }.visit-card address { margin:20px 0 23px; font:500 22px/1.25 'Cormorant Garamond',serif; font-style:normal; }.directions { display:inline-flex; align-items:center; gap:8px; border-bottom:1px solid var(--copper); padding-bottom:4px; color:var(--copper); font-size:11px; font-weight:700; }.hours { display:flex; align-items:center; gap:11px; margin-top:36px; padding-top:20px; border-top:1px solid var(--line); color:var(--copper); }.hours div { display:flex; flex-direction:column; gap:3px; }.hours b { font-size:11px; color:var(--plum); }.hours span { font-size:10px; color:var(--muted); }
+footer { display:flex; align-items:center; justify-content:space-between; gap:25px; padding:42px 6vw 80px; background:var(--plum); color:#f7ebe4; }.footer-brand b { color:#fff6ed; }.footer-brand small { color:var(--copper-light); }.footer-brand img { width:34px;height:34px; }.footer-brand + p { color:#c3aeb0; font:italic 500 20px 'Cormorant Garamond',serif; }.footer-links { display:flex; gap:25px; color:var(--copper-light); font-size:11px; font-weight:700; }.mobile-dock { display:none; }
+@media (max-width:900px) { .hero { grid-template-columns:1fr; padding:65px 7vw 80px; }.hero-copy { padding:0; }.hero-visual { height:480px; margin-top:25px; }.intro-band { grid-template-columns:55px 1fr; padding:75px 8vw; }.intro-text { grid-column:2; padding-top:0; }.services-section { padding:85px 7vw; }.rituals-section { grid-template-columns:1fr; }.rituals-image { min-height:500px; max-height:500px; }.rituals-content { padding:80px 9vw; }.nails-section { grid-template-columns:1fr; padding:85px 8vw; }.nails-copy { padding:0; }.visit-section { padding:85px 8vw; grid-template-columns:1fr 1fr; gap:5vw; } }
+@media (max-width:650px) { .topline { padding:0 6vw; }.topline-location,.topline a { display:none; }.nav-wrap { padding:0 6vw; height:76px; }.brand b { font-size:23px; }.nav-links { display:none; position:absolute; top:75px; left:0; right:0; flex-direction:column; align-items:stretch; gap:0; background:var(--paper); border-bottom:1px solid var(--line); box-shadow:0 12px 20px rgba(49,35,43,.08); }.nav-links.open { display:flex; }.nav-links a { padding:18px 8vw; border-bottom:1px solid var(--line); }.nav-book { justify-content:center; margin:12px 8vw 20px; }.menu-toggle { display:block; }.hero { padding:56px 7vw 68px; min-height:0; }.hero h1 { font-size:58px; }.hero-description { font-size:14px; }.hero-actions { align-items:flex-start; flex-direction:column; gap:19px; margin-bottom:32px; }.hero-visual { height:375px; }.hero-visual img { width:91%; }.hero-stamp { width:88px; height:88px; right:0; }.hero-stamp b { font-size:34px; line-height:27px; }.intro-band { display:block; padding:67px 8vw 76px; }.intro-mark { text-align:left; margin-bottom:35px; }.intro-text { margin-top:30px; }.section-heading { display:block; margin-bottom:40px; }.section-heading p { margin-top:29px; }.service-tabs { overflow:auto; white-space:nowrap; }.service-tabs button { margin-right:23px; padding-right:0; }.service-feature { grid-template-columns:1fr; margin-top:35px; }.service-image,.service-image img { min-height:280px; height:280px; }.service-prices { padding:37px 8vw 48px; }.price-heading h3 { font-size:37px; }.rituals-image { min-height:330px; max-height:330px; }.rituals-content { padding:65px 8vw 75px; }.rituals-content h2 { margin-bottom:42px; }.nails-section { padding:75px 8vw 100px; gap:55px; }.nails-cards { gap:12px; }.nail-card h3 { padding:0 15px; font-size:27px; }.nail-card .price-list { padding:0 15px; }.nail-card-offset { padding:24px 15px; margin-top:32px; }.nail-number { margin-bottom:43px; }.visit-section { display:block; padding:72px 8vw 95px; }.visit-card { margin-top:55px; padding:30px 27px 28px; }.visit-card address { font-size:20px; } footer { flex-wrap:wrap; padding:36px 7vw 95px; }.footer-brand + p { width:100%; order:3; margin:5px 0 0; }.footer-links { margin-left:auto; }.mobile-dock { position:fixed; display:grid; grid-template-columns:1fr 1fr; bottom:0; left:0; right:0; z-index:20; background:var(--plum); box-shadow:0 -4px 20px rgba(49,35,43,.16); }.mobile-dock a { display:flex; justify-content:center; align-items:center; gap:8px; padding:15px 8px; color:white; font-size:11px; font-weight:700; border-right:1px solid #584149; }.mobile-dock a:last-child { color:var(--copper-light); border:0; } }
+@media (prefers-reduced-motion:no-preference) { .hero-copy { animation:rise .65s cubic-bezier(.23,1,.32,1) both; }.hero-visual { animation:rise .75s .08s cubic-bezier(.23,1,.32,1) both; } }
+@keyframes rise { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:none; } }
