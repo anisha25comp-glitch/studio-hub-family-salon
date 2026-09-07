@@ -28,6 +28,23 @@
 - [x] Send all selected services and appointment details together to WhatsApp.
 - [x] Verify desktop/mobile states and save a new checkpoint.
 
+## Authentic asset revision checklist
+
+- [ ] Prepare the supplied logo as a usable brand asset.
+- [ ] Prepare the supplied before-and-after hair result as a gallery asset.
+- [ ] Prepare the supplied salon interior/station images as gallery assets.
+- [ ] Integrate authentic visuals into the website and reduce generic imagery.
+- [ ] Verify asset cropping, readability, and mobile presentation.
+- [ ] Save and deliver a new authentic-asset checkpoint.
+
+## Visual cleanup revision checklist
+
+- [x] Crop and present the salon logo as a clean visible circular badge.
+- [x] Remove the awkward chair/interior photo treatment from the hero and feature areas.
+- [x] Replace the messy before/after section with a polished custom editorial presentation.
+- [x] Generate pink-toned hair and beauty visuals that match the site direction.
+- [x] Verify desktop/mobile visuals and save the refined checkpoint.
+
 ## Confirmed business details
 
 - Business: The Studio Hub Family Salon – Unisex
