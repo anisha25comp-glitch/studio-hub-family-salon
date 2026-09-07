@@ -16,7 +16,17 @@
 - [x] Add a separate booking section with date, service, and selectable time slots.
 - [x] Add the Instagram handle and supplied QR code asset.
 - [x] Verify revised desktop/mobile layouts and booking interactions.
-- [ ] Save a new revision checkpoint and deliver it.
+- [x] Save a new revision checkpoint and deliver it.
+
+## Booking-flow revision checklist
+
+- [x] Make the Find Us action open the direct Google Maps link.
+- [x] Replace casual WhatsApp copy with a polished Book Appointment flow.
+- [x] Allow multiple services to be added from the menu.
+- [x] Show selected services in a visible appointment cart.
+- [x] Add a final Book Appointment action at the bottom of the menu.
+- [x] Send all selected services and appointment details together to WhatsApp.
+- [x] Verify desktop/mobile states and save a new checkpoint.
 
 ## Confirmed business details
 
