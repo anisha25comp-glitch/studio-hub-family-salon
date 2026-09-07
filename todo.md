@@ -6,7 +6,17 @@
 - [x] Add the full service menu with the supplied prices and categories.
 - [x] Add click-to-call, WhatsApp, directions, opening hours, and corrected address.
 - [x] Verify desktop and mobile layouts, contrast, accessibility, and working links.
-- [ ] Create the final project checkpoint and deliver the project version.
+- [x] Create the final project checkpoint and deliver the project version.
+
+## Revision checklist
+
+- [x] Review the supplied reference website’s visible feature structure.
+- [x] Shift the visual system toward a refined pink palette and reorganize navigation.
+- [x] Add a complete, scannable service menu for every supplied category.
+- [x] Add a separate booking section with date, service, and selectable time slots.
+- [x] Add the Instagram handle and supplied QR code asset.
+- [x] Verify revised desktop/mobile layouts and booking interactions.
+- [ ] Save a new revision checkpoint and deliver it.
 
 ## Confirmed business details
 

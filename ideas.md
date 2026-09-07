@@ -54,3 +54,7 @@ The logo mark is a bold abstract hairpin: two offset copper arcs enclosing a plu
 
 ### Signature Brand Color
 Copper Rose — #B86B5B. It is warm, ownable, and connects hair, beauty, and hospitality without looking like a generic pink salon brand.
+
+## Revision style decision: Pink editorial salon
+
+The revision shifts the Quiet Luxury Studio palette toward blush, rose, soft petal pink, plum, and berry accents. The information architecture now follows the useful feature pattern observed in the supplied reference: a dedicated menu, offers/packages, social/gallery access, find-us section, and a separate appointment slot flow. The visual identity, copy, service prices, logo, and imagery remain original to The Studio Hub Family Salon.
